@@ -12,3 +12,13 @@ body {
   font-size: 70px; 
 }
 
+.info-table {
+  text-align: center;
+}
+
+.info-table .column {
+  width: 33.3%;
+  float: left;
+  margin: 25px;
+  clear: both;
+}
