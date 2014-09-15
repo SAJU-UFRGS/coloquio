@@ -1,9 +1,14 @@
 body {
   background-color: #1B171B;
   color: #FFFFFF;
+  padding: 100px 150px;
 }
 
 .main-color {
   color: #BE245D;
+}
+
+.main-title {
+  font-size: 70px; 
 }
 
