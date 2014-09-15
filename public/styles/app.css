@@ -16,7 +16,8 @@ body {
   text-align: center;
   margin: 25px;
   clear: both;
-  height: 130px;
+  height: 250px;
+  width: 100%;
 }
 
 .info-table .column {
