@@ -22,6 +22,7 @@ body {
 .info-table .column {
   width: 33.3%;
   float: left;
+  text-align: left;
 }
 
 .column .main-color {
@@ -29,5 +30,5 @@ body {
 }
 
 .column .cell-info {
-  font-size: 30px; 
+  font-size: 30px;
 }
