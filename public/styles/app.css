@@ -14,11 +14,12 @@ body {
 
 .info-table {
   text-align: center;
+  margin: 25px;
+  clear: both;
+  height: 130px;
 }
 
 .info-table .column {
   width: 33.3%;
   float: left;
-  margin: 25px;
-  clear: both;
 }
