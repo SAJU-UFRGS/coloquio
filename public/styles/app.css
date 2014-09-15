@@ -33,3 +33,15 @@ body {
 .column .cell-info {
   font-size: 30px;
 }
+
+.cell-info .small {
+  font-size: 18px;
+}
+
+.cell-info .medium {
+  font-size: 20px;
+}
+  
+.cell-info .large {
+  font-size: 60px;
+}
