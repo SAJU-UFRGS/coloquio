@@ -64,3 +64,11 @@ body {
   float: left;
   text-align: left;
 }
+
+#program {
+  text-align: left;
+  margin: 25px;
+  clear: both;
+  height: 250px;
+  width: 100%;
+}
