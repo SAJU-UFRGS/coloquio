@@ -55,7 +55,7 @@ body {
   text-align: center;
   margin: 25px;
   clear: both;
-  height: 250px;
+  height: 400px;
   width: 100%;
 }
 
@@ -63,4 +63,11 @@ body {
   width: 33.3%;
   float: left;
   text-align: left;
+}
+
+#event-objectives {
+  margin: 25px;
+  clear: both;
+  height: 570px;
+  width: 100%;
 }
