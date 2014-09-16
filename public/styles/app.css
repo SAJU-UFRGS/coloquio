@@ -1,7 +1,7 @@
 body {
   background-color: #1B171B;
   color: #FFFFFF;
-  padding: 100px 150px;
+  padding: 50px 150px;
 }
 
 .main-color {
@@ -21,9 +21,10 @@ body {
 }
 
 .info-table .column {
-  width: 33.3%;
+  width: 30%;
   float: left;
   text-align: left;
+  padding-right: 10px;
 }
 
 .column .main-color {
@@ -44,6 +45,10 @@ body {
   
 .cell-info .large {
   font-size: 60px;
+}
+
+.cell-info-small {
+  font-size: 18px;
 }
 
 #organization {
