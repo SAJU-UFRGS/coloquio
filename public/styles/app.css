@@ -16,8 +16,8 @@ body {
   text-align: center;
   margin: 25px 0px;
   clear: both;
-  height: 250px;
   width: 100%;
+  overflow: auto;
 }
 
 .info-table .column {
@@ -53,10 +53,10 @@ body {
 
 #organization {
   text-align: center;
-  margin: 25px;
+  margin: 25px 0px;
   clear: both;
-  height: 400px;
   width: 100%;
+  overflow: auto;
 }
 
 #organization .column {
@@ -66,9 +66,9 @@ body {
 }
 
 #event-objectives {
-  margin: 25px;
+  margin: 25px 0px;
   clear: both;
-  height: 570px;
+  overflow: auto;
   width: 100%;
 }
 
@@ -76,6 +76,14 @@ body {
   text-align: left;
   margin: 25px 0px;
   clear: both;
-  height: 250px;
+  overflow: auto;
   width: 100%;
 }
+
+#work-team {
+  margin: 25px 0px;
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
