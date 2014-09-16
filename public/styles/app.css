@@ -45,3 +45,17 @@ body {
 .cell-info .large {
   font-size: 60px;
 }
+
+#organization {
+  text-align: center;
+  margin: 25px;
+  clear: both;
+  height: 250px;
+  width: 100%;
+}
+
+#organization .column {
+  width: 33.3%;
+  float: left;
+  text-align: left;
+}
