@@ -11,16 +11,18 @@ body {
 }
 
 .thin {
-  font-family: Helvetica, sans-serif;
   font-weight: 100;
 }
 
 .strong {
   font-weight: 700;
-  font-family: Arial, sans-serif;
 }
 
 .main-color {
+  color: #BE245D;
+}
+
+.principal-color {
   color: #BE245D;
 }
 
