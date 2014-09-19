@@ -6,6 +6,16 @@ body {
   background-size: 100%;
   color: #FFFFFF;
   padding: 50px 150px;
+  font-family: Helvetica, sans-serif;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.strong {
+  font-weight: 700;
+  font-family: Arial, sans-serif;
 }
 
 .main-color {
