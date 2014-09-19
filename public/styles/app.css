@@ -1,5 +1,9 @@
 body {
   background-color: #1B171B;
+  background-image: url('fundo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   color: #FFFFFF;
   padding: 50px 150px;
 }
