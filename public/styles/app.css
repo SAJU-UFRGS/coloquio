@@ -7,9 +7,11 @@ body {
   color: #FFFFFF;
   padding: 50px 150px;
   font-family: Helvetica, sans-serif;
+  font-weight: 100;
 }
 
 .thin {
+  font-family: Helvetica, sans-serif;
   font-weight: 100;
 }
 
