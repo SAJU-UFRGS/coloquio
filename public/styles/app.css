@@ -115,26 +115,3 @@ body {
   width: 100%;
 }
 
-#work-team span.main-color {
-  font-size: 20px;
-}
-
-#work-team .row {
-  margin: 0px;
-}
-
-#work-team .thumbnail {
-  background-color: transparent;
-  border: none;
-}
-
-#work-team .thumbnail img {
-  max-width: 100px;
-  max-height: 100px;
-}
-
-#work-team .thumbnail .caption {
-  color: white;
-}
-
-
