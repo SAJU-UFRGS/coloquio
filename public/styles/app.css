@@ -77,10 +77,20 @@ body {
   overflow: auto;
 }
 
+#organization img {
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+}
+
 #organization .column {
   width: 33.3%;
   float: left;
   text-align: left;
+}
+
+.organizer, .supporter {
+  float: left;
 }
 
 #event-objectives {
