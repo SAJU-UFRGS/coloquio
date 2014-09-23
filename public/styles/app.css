@@ -115,3 +115,8 @@ body {
   width: 100%;
 }
 
+#work-team a {
+  color: white;
+  text-decoration: underline;
+}
+
