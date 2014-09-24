@@ -108,6 +108,10 @@ body {
   width: 100%;
 }
 
+#program, #event-objectives, #work-team {
+  font-size: 18px;
+}
+
 #work-team {
   margin: 25px 0px;
   clear: both;
