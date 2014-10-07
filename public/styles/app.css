@@ -108,7 +108,7 @@ body {
   width: 100%;
 }
 
-#program, #event-objectives, #work-team {
+#program table, #event-objectives, #work-team {
   font-size: 18px;
 }
 
@@ -124,3 +124,7 @@ body {
   text-decoration: underline;
 }
 
+#days .hour {
+  width: 60px;
+  vertical-align: top;
+}
