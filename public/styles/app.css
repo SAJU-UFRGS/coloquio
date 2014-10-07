@@ -132,3 +132,16 @@ body {
 #days td {
   font-weight: 100;
 }
+
+#video {
+  margin-bottom: 30px;
+}
+
+#footer {
+  text-align: center;
+  font-size: 18px;
+}
+
+#footer a {
+  color: white;
+}
