@@ -128,3 +128,7 @@ body {
   width: 60px;
   vertical-align: top;
 }
+
+#days td {
+  font-weight: 100;
+}
