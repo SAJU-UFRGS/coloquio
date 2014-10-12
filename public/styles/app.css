@@ -28,6 +28,8 @@ body {
 
 .main-title {
   font-size: 70px; 
+  float: right;
+  width: 900px;
 }
 
 .info-table {
@@ -146,3 +148,14 @@ body {
 #footer a {
   color: white;
 }
+
+.triangle {
+  float: left;
+  width: 75px;
+  margin-top: 50px;
+	height: 0; 
+	border-top: 1px solid transparent;
+  border-bottom: 110px solid transparent;
+  border-right: 75px solid #FF803F;
+}
+
