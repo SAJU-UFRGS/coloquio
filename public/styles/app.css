@@ -131,6 +131,7 @@ body {
 
 #days td {
   font-weight: 100;
+  line-height: 25px;
 }
 
 #video {
