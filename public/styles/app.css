@@ -90,7 +90,7 @@ body {
   text-align: left;
 }
 
-.organizer, .supporter {
+.supporter {
   float: left;
 }
 
@@ -120,7 +120,7 @@ body {
   width: 100%;
 }
 
-#work-team a {
+#work-team a, .organizer a {
   color: white;
   text-decoration: underline;
 }
