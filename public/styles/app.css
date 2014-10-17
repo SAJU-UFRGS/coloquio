@@ -130,9 +130,14 @@ body {
   vertical-align: top;
 }
 
+#days table {
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+
 #days td {
   font-weight: 100;
-  line-height: 25px;
+  line-height: 27px;
 }
 
 #video {
