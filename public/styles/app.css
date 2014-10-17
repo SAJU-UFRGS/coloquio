@@ -109,7 +109,7 @@ body {
   width: 100%;
 }
 
-#program table, #event-objectives, #work-team {
+#program table, #event-objectives, #work-team, #inscriptions {
   font-size: 18px;
 }
 
@@ -120,7 +120,7 @@ body {
   width: 100%;
 }
 
-#work-team a, .organizer a , .supporter a {
+#work-team a, .organizer a , .supporter a, #inscriptions a {
   color: white;
   text-decoration: underline;
 }
