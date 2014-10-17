@@ -120,7 +120,7 @@ body {
   width: 100%;
 }
 
-#work-team a, .organizer a {
+#work-team a, .organizer a , .supporter a {
   color: white;
   text-decoration: underline;
 }
