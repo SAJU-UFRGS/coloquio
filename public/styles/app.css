@@ -32,6 +32,20 @@ body {
   float: right;
 }
 
+#title .title-left {
+  float: left;
+  margin-right: 100px;
+}
+
+#title .title-right {
+  float: left;
+  margin-top: 50px;
+}
+
+.clear {
+  clear: both;
+}
+
 .info-table {
   text-align: center;
   margin: 25px 0px;
