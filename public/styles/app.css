@@ -182,3 +182,8 @@ body {
 #video video {
   margin-bottom: 30px;
 }
+
+.payment-text {
+  margin: 10px 0px;
+  width: 760px;
+}
