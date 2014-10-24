@@ -187,3 +187,11 @@ body {
   margin: 10px 0px;
   width: 760px;
 }
+
+.float-left {
+  float: left;
+}
+
+.to-top {
+  margin-top: -35px;
+}
