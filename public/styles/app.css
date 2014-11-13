@@ -100,9 +100,28 @@ body {
 }
 
 #organization .column {
-  width: 33.3%;
+  width: 50%;
   float: left;
   text-align: left;
+}
+
+#supporters {
+  text-align: left;
+  margin: 25px 0px;
+  clear: both;
+  width: 100%;
+  min-width: 1000px;
+  overflow: auto;
+}
+
+#supporters img {
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+}
+
+#supporters .main-color {
+  font-size: 50px; 
 }
 
 .supporter {
