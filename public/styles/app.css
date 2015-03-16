@@ -140,6 +140,7 @@ body {
   clear: both;
   overflow: auto;
   width: 100%;
+  text-align: justify;
 }
 
 #program {
