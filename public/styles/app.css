@@ -32,11 +32,16 @@ body {
 }
 
 .subtitle {
-  width: 310px;
-  text-align: right;
+  width: 200;
+  text-align: center;
   margin-left: 65px;
   position: relative;
-  top: -20px;
+  top: -100px;
+  left: 121px;
+}
+
+p.indented {
+  text-indent: 50px;
 }
 
 #title .title-left {
