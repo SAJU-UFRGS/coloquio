@@ -8,7 +8,7 @@ class StaffMemberTest < ActiveSupport::TestCase
   end
 
   test 'name should be required' do
-    member = StaffMember.new ({
+    member = StaffMember.new({
       role: @role,
       curriculum_vitae_url: @curriculum_vitae_url
     })
