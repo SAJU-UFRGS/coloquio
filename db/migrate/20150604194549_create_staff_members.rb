@@ -3,7 +3,7 @@ class CreateStaffMembers < ActiveRecord::Migration
     create_table :staff_members do |t|
       t.string :name
       t.string :role
-      t.string :curriculumVitaeUrl
+      t.string :curriculum_vitae_url
 
       t.timestamps null: false
     end
