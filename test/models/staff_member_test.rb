@@ -4,13 +4,13 @@ class StaffMemberTest < ActiveSupport::TestCase
   def setup
     @name = 'Glauco'
     @role = 'Programmer'
-    @curriculumVitaeUrl = 'http://br.linkedin.com/in/glaucovinicius'
+    @curriculum_vitae_url = 'http://br.linkedin.com/in/glaucovinicius'
   end
 
   test 'name should be required' do
-    member = StaffMember.new ({
+    member = StaffMember.new({
       role: @role,
-      curriculumVitaeUrl: @curriculumVitaeUrl
+      curriculum_vitae_url: @curriculum_vitae_url
     })
     assert_not member.valid?
   end
@@ -18,7 +18,7 @@ class StaffMemberTest < ActiveSupport::TestCase
   test 'role should be required' do
     member = StaffMember.new({
       name: @name,
-      curriculumVitaeUrl: @curriculumVitaeUrl
+      curriculum_vitae_url: @curriculum_vitae_url
     })
     assert_not member.valid?
   end
@@ -35,7 +35,7 @@ class StaffMemberTest < ActiveSupport::TestCase
     member = StaffMember.new({
       name: @name,
       role: @role,
-      curriculumVitaeUrl: @curriculumVitaeUrl
+      curriculum_vitae_url: @curriculum_vitae_url
     })
     assert member.valid?
   end
