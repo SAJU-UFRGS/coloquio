@@ -1,3 +1,5 @@
+[![Build Status](https://snap-ci.com/SAJU-UFRGS/coloquio/branch/master/build_image)](https://snap-ci.com/SAJU-UFRGS/coloquio/branch/master)
+
 # node-js-getting-started
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
