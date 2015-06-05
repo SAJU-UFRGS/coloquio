@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150604233826) do
   create_table "organizers", force: :cascade do |t|
     t.string   "name"
     t.string   "website_url"
+    t.string   "image_url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

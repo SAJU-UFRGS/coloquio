@@ -196,53 +196,26 @@ De acordo com a perspectiva e estudo sobre as questões de gênero, mulheres e h
     </div>
     <hr>
     <% @staff_members.each do |staff_member| %>
-      <span>
-        <a href="<%= staff_member.curriculum_vitae_url %>" target="_blank">
-          <%= staff_member.name %> - <%= staff_member.current_job_position %>
-        </a>
-      </span>
-      <br/>
+    <span>
+      <a href="<%= staff_member.curriculum_vitae_url %>" target="_blank">
+        <%= staff_member.name %> - <%= staff_member.current_job_position %>
+      </a>
+    </span>
+    <br/>
     <% end %>
   </div>
   <div id="organization">
     <div id="organizers" class="column">
       <div class="main-color">
-        Organizador
+        Organizadores
       </div>
+      <% @organizers.each do |organizer| %>
       <div class="organizer float-left">
-        <a target="_blank" href="files/pipa.pdf">
-          <img src="images/logo_pipa.png" alt="PIPA - Programa Interdepartamental de Práticas com Adolescentes e Jovens em Conflito com a Lei" style="width:100px">
+        <a target="_blank" href="<%= organizer.website_url %>">
+          <img src="<%= organizer.image_url %>" alt="<%= organizer.name %>" style="width:100px">
         </a>
       </div>
-      <div class="organizer float-left">
-        <a target="_blank" href="http://www.ufrgs.br/direito/"><img src="images/logo_fac.png" alt="Faculdade de Direito da UFRGS" style="width:100px"/></a>
-      </div>
-      <div class="organizer">
-        <a target="_blank" href="http://www.ufrgs.br/ppgedu/">
-          <img src="images/logo_ppgedu.png" alt="PPGEDU" style="width:80px"/>
-        </a>
-      </div>
-      <div class="organizer clear">
-        <a target="_blank" href="https://www.facebook.com/pages/Coletivo-Fila/808799052480189?ref=ts&fref=t">
-          <span>Coletivo Filas</span>
-        </a>
-      </div>
-      <div class="organizer">
-        <a target="_blank" href="http://g10saju.blogspot.com.br/">
-          <!--<img src="images/g10.png" alt="G10">-->
-          <span>G10</span>
-        </a>
-      </div>
-      <div class="organizer">
-        <a target="_blank" href="http://www.ufrgs.br/napead/repositorio/objetos/estacao-psi/">
-          <span>Estação Psi</span>
-        </a>
-      </div>
-      <div class="organizer">
-        <a target="_blank" href="http://www.ufrgs.br/faced/pesquisa/nupeeevs/psc.html">
-          <span>PPSC</span>
-        </a>
-      </div>
+      <% end %>
     </div>
 
     <div id="sponsors" class="column">
