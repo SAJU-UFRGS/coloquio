@@ -195,51 +195,14 @@ De acordo com a perspectiva e estudo sobre as questões de gênero, mulheres e h
       Equipe de Trabalho
     </div>
     <hr>
-    <span>
-      <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4138267Y6" target="_blank">
-        Ana Paula Motta Costa - Professora da Faculdade de Direito (UFRGS)
-      </a>
-    </span><br/>
-    <span>
-      <a href="http://lattes.cnpq.br/9865957374821514" target="_blank">
-        Ana Claudia Cifali - Advogada integrante do PIPA/G10/SAJU (UFRGS)
-      </a>
-    </span><br/>
-    <span>
-      <a href="http://lattes.cnpq.br/4910387397289987" target="_blank">
-      Andressa Ribas Pereira - Acadêmica da Faculdade de Direito (UFRGS)
-      </a>
-    </span><br/>
-    <span>
-      <a href="http://lattes.cnpq.br/7308430223497925">
-        Daniela Dora Eilberg - Acadêmica da Faculdade de Direito (UFRGS)
-      </a>
-    </span><br/>
-    <span>
-      <a href="http://lattes.cnpq.br/6291477012019535">
-      Julia Maia Goldani - Acadêmica da Faculdade de Direito (UFRGS)
-      </a>
-    </span><br/>
-    <span>
-      <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4444453Y3" target="_blank">
-        Karine Szuchman - Psicóloga integrante do Coletivo Fila/PIPA (UFRGS)
-      </a>
-    </span><br/>
-    <span>
-      <a href="http://lattes.cnpq.br/7424634117425866">
-      Luiza Griesang Cabistani - Acadêmica da Faculdade de Direito (UFRGS)
-      </a>
-    </span><br/>
-    <span>
-      <a href="http://lattes.cnpq.br/5882373598178699">
-        Paula Flores - Psicóloga Integrante equipe PPSC/PIPA (UFRGS)
-      </a>
-    </span><br/>
-    <span>
-      <a href="http://lattes.cnpq.br/7471349155314864">
-      Sofia de Souza Lima Safi - Psicóloga do Serviço e Atendimento Familiar NEF/ FASC
-      </a>
-    </span><br/>
+    <% @staff_members.each do |staff_member| %>
+      <span>
+        <a href="<%= staff_member.curriculum_vitae_url %>" target="_blank">
+          <%= staff_member.name %> - <%= staff_member.current_job_position %>
+        </a>
+      </span>
+      <br/>
+    <% end %>
   </div>
   <div id="organization">
     <div id="organizers" class="column">
