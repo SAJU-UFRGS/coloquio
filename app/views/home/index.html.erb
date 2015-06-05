@@ -249,9 +249,13 @@ De acordo com a perspectiva e estudo sobre as questões de gênero, mulheres e h
       <div class="main-color">
         Patrocinio
       </div>
-      <div class="sponsor">
-        <a target="_blank" href="http://www.thoughtworks.com/pt/"><img src="images/logo_tw_white.png" alt="ThoughtWorks" style="width:250px"/></a>
-      </div>
+      <% @sponsors.each do |sponsor| %>
+        <div class="sponsor">
+          <a target="_blank" href="<%= sponsor.website_url %>">
+            <img src="<%= sponsor.image_url %>" alt="<%= sponsor.name %>" style="width:250px"/>
+          </a>
+        </div>
+      <% end %>
     </div>
   </div>
 
