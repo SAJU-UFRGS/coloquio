@@ -2,8 +2,8 @@ class CreateOrganizers < ActiveRecord::Migration
   def change
     create_table :organizers do |t|
       t.string :name
-      t.string :website_url
-      t.string :image_url
+      t.string :website_url, null: true
+      t.string :image_url, null: true
 
       t.timestamps null: false
     end

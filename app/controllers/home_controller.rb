@@ -3,5 +3,6 @@ class HomeController < ApplicationController
     @organizers = Organizer.all
     @staff_members = StaffMember.all
     @sponsors = Sponsor.all
+    @supporters = Supporter.all
   end
 end

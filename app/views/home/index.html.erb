@@ -236,65 +236,13 @@ De acordo com a perspectiva e estudo sobre as questões de gênero, mulheres e h
     <div class="main-color">
       Apoio
     </div>
+    <% @supporters.each do |supporter| %>
     <div class="supporter">
-      <a target="_blank" href="http://www.renade.org/"><img src="images/logos_26.png" alt="RENADE" style="width:72px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href="http://www.ibccrim.org.br/">
-        <img src="images/logo_ibccrim.png" alt="IBCCRIM" />
+      <a target="_blank" href="<%= supporter.website_url %>">
+        <img src="<%= supporter.image_url %>" alt="<%= supporter.name %>" style="width:72px"/>
       </a>
     </div>
-    <div class="supporter">
-      <a target="_blank" href="http://www.defensoria.rs.gov.br/conteudo/20569"><img src="images/logo_dprs.png" alt="Defensoria Pública" style="width:175px;margin-top:20px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href="http://www.ilea.ufrgs.br/"><img src="images/logo_ilea.png" alt="Instituto Latino-Americano de Estudos Avançados" style="width:150px;margin-top:20px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href="http://www.ufrgs.br/"><img src="images/logo_ufrgs.png" alt="UFRGS" /></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_07.png" alt="Crescer Legal" style="margin-top: -10px" /></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_09.png" alt="Jornada Escolar Ampliada" style="width:100px;margin-top:-26px;margin-left:-10px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_12.png" alt="Faced" style="margin-top:-10px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_13.png" alt="Instituto de Psicologia" /></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_37.png" alt="Festa Pronta" style="width: 77px;margin-top: 32px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_41.png" alt="Ministerio do Desenvolvimento Social e Combate à Fome" style="width: 135px;margin-top: 25px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_44.png" alt="RENAPSI" style="width: 130px;margin-top: 40px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_46.png" alt="GMC" /></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_56.png" alt="Galeto Mamma Mia" style='margin-top: 55px;'/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_58.png" alt="DaDo Garden Grill" style="width: 120px;margin-top: 60px;"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_60.png" alt="Livraria do Advogado" style="margin-top: 70px;padding-bottom: 43px;"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_66.png" alt="Verbo Jurídico" style="margin-top: 20px;"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_72.png" alt="Oficina de Imagens" style="margin-top: 50px;"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_63.png" alt="Arise" style="margin-top: 20px;"/></a>
-    </div>
+    <% end %>
   </div>
 
   <div id="footer">
