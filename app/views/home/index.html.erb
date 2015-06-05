@@ -196,62 +196,39 @@ De acordo com a perspectiva e estudo sobre as questões de gênero, mulheres e h
     </div>
     <hr>
     <% @staff_members.each do |staff_member| %>
-      <span>
-        <a href="<%= staff_member.curriculum_vitae_url %>" target="_blank">
-          <%= staff_member.name %> - <%= staff_member.current_job_position %>
-        </a>
-      </span>
-      <br/>
+    <span>
+      <a href="<%= staff_member.curriculum_vitae_url %>" target="_blank">
+        <%= staff_member.name %> - <%= staff_member.current_job_position %>
+      </a>
+    </span>
+    <br/>
     <% end %>
   </div>
   <div id="organization">
     <div id="organizers" class="column">
       <div class="main-color">
-        Organizador
+        Organizadores
       </div>
+      <% @organizers.each do |organizer| %>
       <div class="organizer float-left">
-        <a target="_blank" href="files/pipa.pdf">
-          <img src="images/logo_pipa.png" alt="PIPA - Programa Interdepartamental de Práticas com Adolescentes e Jovens em Conflito com a Lei" style="width:100px">
+        <a target="_blank" href="<%= organizer.website_url %>">
+          <img src="<%= organizer.image_url %>" alt="<%= organizer.name %>" style="width:100px">
         </a>
       </div>
-      <div class="organizer float-left">
-        <a target="_blank" href="http://www.ufrgs.br/direito/"><img src="images/logo_fac.png" alt="Faculdade de Direito da UFRGS" style="width:100px"/></a>
-      </div>
-      <div class="organizer">
-        <a target="_blank" href="http://www.ufrgs.br/ppgedu/">
-          <img src="images/logo_ppgedu.png" alt="PPGEDU" style="width:80px"/>
-        </a>
-      </div>
-      <div class="organizer clear">
-        <a target="_blank" href="https://www.facebook.com/pages/Coletivo-Fila/808799052480189?ref=ts&fref=t">
-          <span>Coletivo Filas</span>
-        </a>
-      </div>
-      <div class="organizer">
-        <a target="_blank" href="http://g10saju.blogspot.com.br/">
-          <!--<img src="images/g10.png" alt="G10">-->
-          <span>G10</span>
-        </a>
-      </div>
-      <div class="organizer">
-        <a target="_blank" href="http://www.ufrgs.br/napead/repositorio/objetos/estacao-psi/">
-          <span>Estação Psi</span>
-        </a>
-      </div>
-      <div class="organizer">
-        <a target="_blank" href="http://www.ufrgs.br/faced/pesquisa/nupeeevs/psc.html">
-          <span>PPSC</span>
-        </a>
-      </div>
+      <% end %>
     </div>
 
     <div id="sponsors" class="column">
       <div class="main-color">
         Patrocinio
       </div>
-      <div class="sponsor">
-        <a target="_blank" href="http://www.thoughtworks.com/pt/"><img src="images/logo_tw_white.png" alt="ThoughtWorks" style="width:250px"/></a>
-      </div>
+      <% @sponsors.each do |sponsor| %>
+        <div class="sponsor">
+          <a target="_blank" href="<%= sponsor.website_url %>">
+            <img src="<%= sponsor.image_url %>" alt="<%= sponsor.name %>" style="width:250px"/>
+          </a>
+        </div>
+      <% end %>
     </div>
   </div>
 
@@ -259,65 +236,13 @@ De acordo com a perspectiva e estudo sobre as questões de gênero, mulheres e h
     <div class="main-color">
       Apoio
     </div>
+    <% @supporters.each do |supporter| %>
     <div class="supporter">
-      <a target="_blank" href="http://www.renade.org/"><img src="images/logos_26.png" alt="RENADE" style="width:72px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href="http://www.ibccrim.org.br/">
-        <img src="images/logo_ibccrim.png" alt="IBCCRIM" />
+      <a target="_blank" href="<%= supporter.website_url %>">
+        <img src="<%= supporter.image_url %>" alt="<%= supporter.name %>" style="width:72px"/>
       </a>
     </div>
-    <div class="supporter">
-      <a target="_blank" href="http://www.defensoria.rs.gov.br/conteudo/20569"><img src="images/logo_dprs.png" alt="Defensoria Pública" style="width:175px;margin-top:20px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href="http://www.ilea.ufrgs.br/"><img src="images/logo_ilea.png" alt="Instituto Latino-Americano de Estudos Avançados" style="width:150px;margin-top:20px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href="http://www.ufrgs.br/"><img src="images/logo_ufrgs.png" alt="UFRGS" /></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_07.png" alt="Crescer Legal" style="margin-top: -10px" /></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_09.png" alt="Jornada Escolar Ampliada" style="width:100px;margin-top:-26px;margin-left:-10px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_12.png" alt="Faced" style="margin-top:-10px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_13.png" alt="Instituto de Psicologia" /></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_37.png" alt="Festa Pronta" style="width: 77px;margin-top: 32px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_41.png" alt="Ministerio do Desenvolvimento Social e Combate à Fome" style="width: 135px;margin-top: 25px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_44.png" alt="RENAPSI" style="width: 130px;margin-top: 40px"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_46.png" alt="GMC" /></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_56.png" alt="Galeto Mamma Mia" style='margin-top: 55px;'/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_58.png" alt="DaDo Garden Grill" style="width: 120px;margin-top: 60px;"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_60.png" alt="Livraria do Advogado" style="margin-top: 70px;padding-bottom: 43px;"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_66.png" alt="Verbo Jurídico" style="margin-top: 20px;"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_72.png" alt="Oficina de Imagens" style="margin-top: 50px;"/></a>
-    </div>
-    <div class="supporter">
-      <a target="_blank" href=""><img src="images/logos_63.png" alt="Arise" style="margin-top: 20px;"/></a>
-    </div>
+    <% end %>
   </div>
 
   <div id="footer">
