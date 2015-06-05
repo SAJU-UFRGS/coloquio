@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 20150604233826) do
 
   create_table "staff_members", force: :cascade do |t|
     t.string   "name"
-    t.string   "role"
+    t.string   "current_job_position"
     t.string   "curriculum_vitae_url"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
