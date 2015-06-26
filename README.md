@@ -1,38 +1,31 @@
 [![Build Status](https://snap-ci.com/SAJU-UFRGS/coloquio/branch/master/build_image)](https://snap-ci.com/SAJU-UFRGS/coloquio/branch/master)
 
-# node-js-getting-started
+# Getting Started
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
-
-This application support the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
-
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+To run the project locally, clone the repo:
 
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
+$ git clone git@github.com:SAJU-UFRGS/coloquio.git # or clone your own fork
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+Install dependencies:
 
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
+```sh
+$ cd coloquio
+$ bundle install
 ```
 
-## Documentation
+Start postgres, create the database and apply migrations:
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+```sh
+$ rake db:create
+$ rake db:migrate
+```
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+Start the server:
+
+```
+$ bin/rails server
+```
+
+And checkout the app locally at http://localhost:3000.
