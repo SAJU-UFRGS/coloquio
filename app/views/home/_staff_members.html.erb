@@ -1,0 +1,15 @@
+<div id="work-team" class="column">
+    <div class="main-color">
+      Equipe de Trabalho
+    </div>
+    <hr>
+    <% @staff_members.each do |staff_member| %>
+    <span>
+      <a href="<%= staff_member.curriculum_vitae_url %>" target="_blank">
+        <%= staff_member.name %> - <%= staff_member.current_job_position %>
+      </a>
+    </span>
+    <br/>
+    <% end %>
+  </div>
+

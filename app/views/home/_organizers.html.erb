@@ -1,0 +1,29 @@
+ <div id="organization">
+    <div id="organizers" class="column">
+      <div class="main-color">
+        Organizadores
+      </div>
+      <% @organizers.each do |organizer| %>
+      <div class="organizer float-left">
+        <a target="_blank" href="<%= organizer.website_url %>">
+          <img src="<%= organizer.image_url %>" alt="<%= organizer.name %>" style="width:100px">
+        </a>
+      </div>
+      <% end %>
+    </div>
+
+    <div id="sponsors" class="column">
+      <div class="main-color">
+        Patrocinio
+      </div>
+      <% @sponsors.each do |sponsor| %>
+        <div class="sponsor">
+          <a target="_blank" href="<%= sponsor.website_url %>">
+            <img src="<%= sponsor.image_url %>" alt="<%= sponsor.name %>" style="width:250px"/>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
