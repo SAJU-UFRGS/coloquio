@@ -16,10 +16,16 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.model 'About' do
+    label_plural 'About'
+  end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
-    new
+    new do
+      except ['About']
+    end
     export
     bulk_delete
     show
