@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150629231222) do
+ActiveRecord::Schema.define(version: 20150629233205) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,15 @@ ActiveRecord::Schema.define(version: 20150629231222) do
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
+  create_table "meetings", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.text     "venue"
+    t.date     "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "organizers", force: :cascade do |t|
     t.string   "name"
     t.string   "website_url"
@@ -47,6 +56,17 @@ ActiveRecord::Schema.define(version: 20150629231222) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  create_table "speakers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "profile"
+    t.text     "description"
+    t.integer  "meeting_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "speakers", ["meeting_id"], name: "index_speakers_on_meeting_id", using: :btree
 
   create_table "sponsors", force: :cascade do |t|
     t.string   "name"
@@ -72,4 +92,5 @@ ActiveRecord::Schema.define(version: 20150629231222) do
     t.datetime "updated_at",  null: false
   end
 
+  add_foreign_key "speakers", "meetings"
 end
