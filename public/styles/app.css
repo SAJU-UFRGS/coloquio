@@ -40,7 +40,7 @@ body {
   left: 121px;
 }
 
-p.indented {
+#event-objectives p, p.indented {
   text-indent: 50px;
 }
 

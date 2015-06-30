@@ -18,6 +18,7 @@ RailsAdmin.config do |config|
 
   config.model 'About' do
     label_plural 'About'
+    field :content, :ck_editor
   end
 
   config.actions do

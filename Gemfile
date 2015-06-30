@@ -8,6 +8,7 @@ gem 'pg'
 gem 'puma'
 gem 'turbolinks'
 gem 'jquery-rails'
+gem 'ckeditor'
 
 group :production do
   gem 'rails_12factor', group: :production
