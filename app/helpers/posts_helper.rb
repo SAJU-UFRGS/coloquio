@@ -5,6 +5,8 @@ module PostsHelper
       render 'media/video', {post: post}
     when 'audio/mpeg', 'audio/ogg', 'audio/wav'
       render 'media/audio', {post: post}
+    when 'youtube'
+      render 'media/youtube', {post: post}
     when 'image'
       render 'media/image', {post: post}
     end

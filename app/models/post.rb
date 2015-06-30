@@ -4,6 +4,6 @@ class Post < ActiveRecord::Base
 
   def media_type_enum
     [['video/mp4'], ['video/ogg'], ['video/webm'], ['audio/wav'],
-     ['audio/mpeg'], ['audio/ogg'], ['image']]
+     ['audio/mpeg'], ['audio/ogg'], ['youtube'], ['image']]
   end
 end
