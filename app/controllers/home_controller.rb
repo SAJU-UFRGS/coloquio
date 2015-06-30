@@ -5,5 +5,6 @@ class HomeController < ApplicationController
     @staff_members = StaffMember.all
     @sponsors = Sponsor.all
     @supporters = Supporter.all
+    @meetings = Meeting.all
   end
 end

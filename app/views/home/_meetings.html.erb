@@ -1,3 +1,46 @@
+<div id="program" class="column">
+  <div class="main-color">Encontros</div>
+  <ul class="nav nav-tabs" role="tablist">
+    <% @meetings.each do |meeting| %>
+      <li><a href="#<%= meeting.id %>" class="principal-color" role="tab" data-toggle="tab"><%= meeting.date %></a></li>
+    <% end %>
+  </ul>
+
+  <div id="days" class="tab-content">
+    <% @meetings.each do |meeting| %>
+    <div id="<%= meeting.id %>" class="day tab-pane">
+      <table>
+        <tr>
+          <td class="hour"><h3>18:30 - </h3></td>
+          <td>
+            <h3>
+              <%= meeting.title %><br/>
+            </h3>
+            <p>
+              <%= meeting.body %>
+            </p>
+            <h4>
+              Debatedores:
+            </h4>
+            <ul>
+              <% meeting.speakers.each do |speaker| %>
+                <li><a href="<%= speaker.profile %>"><%= speaker.name %></a> - <%= speaker.description %></li>
+              <% end %>
+            </ul>
+            <h4>
+              Local:
+            </h4>
+            <p>
+              <%= meeting.venue %>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>   
+  <% end %>
+  </div>   
+</div>
+
   <div id="program" class="column">
     <div class="main-color">Encontros</div>
     <ul class="nav nav-tabs" role="tablist">
