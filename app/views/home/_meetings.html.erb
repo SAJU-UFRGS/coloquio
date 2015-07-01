@@ -11,7 +11,7 @@
     <div id="<%= meeting.id %>" class="day tab-pane">
       <table>
         <tr>
-          <td class="hour"><h3>18:30 - </h3></td>
+          <td class="hour"><h3> <%= meeting.start_time.strftime("%H:%M") %> - </h3></td>
           <td>
             <h3>
               <%= meeting.title %><br/>
@@ -36,9 +36,9 @@
           </td>
         </tr>
       </table>
-    </div>   
+    </div>
   <% end %>
-  </div>   
+  </div>
 </div>
 
   <div id="program" class="column">
@@ -160,4 +160,3 @@ De acordo com a perspectiva e estudo sobre as questões de gênero, mulheres e h
       </div>
     </div>
   </div>
-
