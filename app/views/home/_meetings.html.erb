@@ -2,7 +2,7 @@
   <div class="main-color">Encontros</div>
   <ul class="nav nav-tabs" role="tablist">
     <% @meetings.each do |meeting| %>
-      <li><a href="#<%= meeting.id %>" class="principal-color" role="tab" data-toggle="tab"><%= meeting.date %></a></li>
+      <li><a href="#<%= meeting.id %>" class="principal-color" role="tab" data-toggle="tab"><%= meeting.date.strftime("%d/%m") %></a></li>
     <% end %>
   </ul>
 
