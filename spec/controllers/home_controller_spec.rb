@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe HomeController, type: :controller do
+describe HomeController do
   it 'renders home page with context data' do
       get :index
       expect(response).to have_http_status(:success)

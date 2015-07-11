@@ -15,6 +15,7 @@ group :production do
 end
 
 group :test do
+  gem 'factory_girl_rails'
   gem 'rspec'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
