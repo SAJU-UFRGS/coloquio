@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.2.2"
 
 gem 'rails', '4.2.1'
 gem 'rails_admin', '0.6.7'
@@ -14,4 +14,8 @@ group :production do
   gem 'rails_12factor', group: :production
 end
 
-ruby "2.2.2"
+group :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+end
