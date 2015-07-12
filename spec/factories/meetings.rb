@@ -8,7 +8,7 @@ FactoryGirl.define do
 
     venue "Sala 102 da FACED  (Av. Paulo Gama s/n - Prédio 12201 térreo
           Bairro Farroupilha - Porto Alegre. CEP: 90046-900)"
-    date "2015-07-11"
+    date 3.days.from_now
     start_time "2015-07-11 17:54:42"
   end
 end

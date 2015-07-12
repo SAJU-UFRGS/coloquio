@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe StaffMember do
-  it 'should have a valid factory' do
+  it 'has a valid factory' do
     expect(build :staff_member).to be_valid
   end
 

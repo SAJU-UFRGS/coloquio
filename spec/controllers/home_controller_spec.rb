@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe HomeController do
-  before(:all) do
+  before(:each) do
     @staff = create :staff_member
     @about = create :about
     @organizer = create :organizer
@@ -21,6 +21,7 @@ describe HomeController do
       expect(assigns :sponsors).to contain_exactly(@sponsor)
       expect(assigns :supporters).to contain_exactly(@supporter)
       expect(assigns :meetings).to contain_exactly(@meeting)
+      expect(assigns :next_meeting).to_not be_nil
       expect(assigns :posts).to contain_exactly(@post)
     end
 end
