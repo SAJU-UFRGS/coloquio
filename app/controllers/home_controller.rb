@@ -6,6 +6,7 @@ class HomeController < ApplicationController
     @sponsors = Sponsor.all
     @supporters = Supporter.all
     @meetings = Meeting.order(:date)
+    @next_meeting = Meeting.next_meeting
     @posts = Post.all
   end
 end
