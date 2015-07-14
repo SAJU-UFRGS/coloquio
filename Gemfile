@@ -14,7 +14,7 @@ group :production do
   gem 'rails_12factor', group: :production
 end
 
-group :test do
+group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec'
   gem 'rspec-rails'
