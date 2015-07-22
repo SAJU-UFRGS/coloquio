@@ -1,48 +1,38 @@
-<html>
-<head>
-  <title>COLÓQUIO INTERNACIONAL DE JUSTIÇA JUVENIL NA CONTEMPORANEIDADE</title>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"></link>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles/app.css"></link>
-</head>
-<body>
-  <div id="title">
-    <div class="main-title">
-      <div class="title-left">
-        <div class="main-color thin">
-          COLÓQUIO
-        </div>
-        <div class="triangle">
-          <img SRC="styles/saju-final.png" ALT="saju logo">
-        </div>
-        <div class="main-color strong">
-           IVO
-        </div>
+<div id="title">
+  <div class="main-title">
+    <div class="title-left">
+      <div class="main-color thin">
+        <%= @about.main_title %>
       </div>
-      <div class="title-right">
-          <img src="images/80_ufrgs.png" alt="UFRGS" style="width:200px">
+      <div class="triangle">
+        <img SRC="styles/saju-final.png" ALT="saju logo">
+      </div>
+      <div class="main-color strong">
+         IVO
       </div>
     </div>
-    <div class="subtitle">
-      COLÓQUIO INTERNACIONAL DE JUSTIÇA JUVENIL NA CONTEMPORANEIDADE
+    <div class="title-right">
+        <img src="images/80_ufrgs.png" alt="UFRGS" style="width:200px">
     </div>
   </div>
-
-  <%= render 'about'%>
-
-  <%= render 'meetings'%>
-
-  <%= render 'posts'%>
-
-  <%= render 'staff_members'%>
-  <%= render 'organizers'%>
-  <%= render 'supporters'%>
-
-  <div id="footer">
-    <div>
-      INSCRIÇÕES NO LOCAL E HORÁRIO DO EVENTO
-    </div>
-    <a href="mailto:coloquiojusticajuvenil@gmail.com" title="Entre em contato conosco" class="footer-link">coloquiojusticajuvenil@gmail.com</a>
+  <div class="subtitle">
+    COLÓQUIO INTERNACIONAL DE JUSTIÇA JUVENIL NA CONTEMPORANEIDADE
   </div>
-</body>
+</div>
+
+<%= render 'about'%>
+
+<%= render 'meetings'%>
+
+<%= render 'posts'%>
+
+<%= render 'staff_members'%>
+<%= render 'organizers'%>
+<%= render 'supporters'%>
+
+<div id="footer">
+  <div>
+    INSCRIÇÕES NO LOCAL E HORÁRIO DO EVENTO
+  </div>
+  <a href="mailto:coloquiojusticajuvenil@gmail.com" title="Entre em contato conosco" class="footer-link">coloquiojusticajuvenil@gmail.com</a>
+</div>

@@ -1,3 +1,3 @@
 class About < ActiveRecord::Base
-  validates :content, presence: true
+  validates :content, :main_title, presence: true
 end
