@@ -21,6 +21,23 @@ RailsAdmin.config do |config|
     field :content, :ck_editor
   end
 
+  config.model 'Post' do
+    label_plural 'Posts'
+    field :title
+    field :content, :ck_editor
+
+    include_all_fields
+  end
+
+  config.model 'Meeting' do
+    label_plural 'Meetings'
+    field :title
+    field :body, :ck_editor
+
+    include_all_fields
+  end
+
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
