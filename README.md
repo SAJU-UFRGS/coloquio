@@ -1,6 +1,9 @@
 [![Build Status](https://snap-ci.com/SAJU-UFRGS/coloquio/branch/master/build_image)](https://snap-ci.com/SAJU-UFRGS/coloquio/branch/master)
 
-# Getting Started
+# Colóquio Internacional de Justiça Juvenil na Contemporaniedade
+http://coloquiointernacionaljj.com.br
+
+## Getting Started
 
 To run the project locally, clone the repo:
 
@@ -29,3 +32,7 @@ $ bin/rails server
 ```
 
 And checkout the app locally at http://localhost:3000.
+
+## Kanban board
+
+We are using a [tablero](http://tablero-coloquio.herokuapp.com/) board for the issues.
