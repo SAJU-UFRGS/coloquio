@@ -47,17 +47,11 @@ RailsAdmin.config do |config|
     new do
       except ['About']
     end
-    export
-    bulk_delete
     show
     edit
     delete do
       except ['About']
     end
     show_in_app
-
-    ## With an audit adapter, you can add:
-    # history_index
-    # history_show
   end
 end
