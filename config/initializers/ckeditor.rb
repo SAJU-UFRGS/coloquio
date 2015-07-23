@@ -12,7 +12,7 @@ module RailsAdmin
           include ActionView::Helpers::SanitizeHelper
 
           register_instance_option :pretty_value do
-            strip_tags value
+            sanitize strip_tags(value)
           end
         end
       end
