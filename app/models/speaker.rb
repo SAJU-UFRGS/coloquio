@@ -1,3 +1,3 @@
 class Speaker < ActiveRecord::Base
-  belongs_to :meeting, inverse_of: :speakers
+  has_and_belongs_to_many :meetings
 end

@@ -5,7 +5,7 @@ describe Meeting do
     expect(build :meeting).to be_valid
   end
 
-  it { is_expected.to have_many :speakers }
+  it { is_expected.to have_and_belong_to_many :speakers }
   it { is_expected.to accept_nested_attributes_for(:speakers).allow_destroy(true) }
 
   before(:each) do

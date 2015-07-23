@@ -1,5 +1,5 @@
 class Meeting < ActiveRecord::Base
-  has_many :speakers, inverse_of: :meeting
+  has_and_belongs_to_many :speakers
   accepts_nested_attributes_for :speakers, allow_destroy: true
 
   def self.next_meeting()

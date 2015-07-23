@@ -41,6 +41,14 @@ RailsAdmin.config do |config|
   end
 
 
+  config.model 'Speaker' do
+    label_plural 'Speakers'
+    field :meetings do
+      hide
+    end
+    include_all_fields
+  end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
