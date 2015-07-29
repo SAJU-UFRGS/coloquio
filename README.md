@@ -23,6 +23,7 @@ Start postgres, create the database and apply migrations:
 ```sh
 $ rake db:create
 $ rake db:migrate
+$ rake db:seed
 ```
 
 Start the server:
