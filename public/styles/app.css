@@ -9,6 +9,7 @@ body {
   font-family: Helvetica, sans-serif;
   font-weight: 100;
   min-width: 1200px;
+  padding-top: 0px;
 }
 
 .thin {
@@ -28,15 +29,16 @@ body {
 }
 
 .main-title {
-  font-size: 70px; 
+  font-size: 70px;
 }
 
 .subtitle {
-  width: 200;
+  font-size: 14px;
+  width: 220px;
   text-align: center;
   margin-left: 65px;
   position: relative;
-  top: -100px;
+  top: -81px;
   left: 121px;
 }
 
@@ -74,7 +76,7 @@ body {
 }
 
 .column .main-color {
-  font-size: 50px; 
+  font-size: 50px;
 }
 
 .column .cell-info {
@@ -88,7 +90,7 @@ body {
 .cell-info .medium {
   font-size: 20px;
 }
-  
+
 .cell-info .large {
   font-size: a60px;
 }
@@ -133,7 +135,7 @@ body {
 }
 
 #supporters .main-color {
-  font-size: 50px; 
+  font-size: 50px;
 }
 
 .supporter {
