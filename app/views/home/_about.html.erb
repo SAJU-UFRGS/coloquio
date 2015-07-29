@@ -1,4 +1,4 @@
 <div id="event-objectives" class="column">
   <hr/>
-  <%= @about.content.html_safe %>
+  <%= @about.content.try(:html_safe) %>
 </div>
