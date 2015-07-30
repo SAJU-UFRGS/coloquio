@@ -1,3 +1,245 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #1B171B;
+  background-image: asset-url('fundo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: #FFFFFF;
+  padding: 50px 150px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  min-width: 1200px;
+  padding-top: 0px;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.main-color {
+  color: #FF803F;
+}
+
+.principal-color {
+  color: #FF803F;
+}
+
+.main-title {
+  font-size: 70px;
+}
+
+.subtitle {
+  font-size: 14px;
+  width: 220px;
+  text-align: center;
+  margin-left: 65px;
+  position: relative;
+  top: -81px;
+  left: 121px;
+}
+
+#event-objectives p, p.indented {
+  text-indent: 50px;
+}
+
+#title .title-left {
+  float: left;
+  margin-right: 100px;
+}
+
+#title .title-right {
+  float: left;
+  margin-top: 50px;
+}
+
+.clear {
+  clear: both;
+}
+
+.info-table {
+  text-align: center;
+  margin: 25px 0px;
+  clear: both;
+  width: 100%;
+  overflow: auto;
+}
+
+.info-table .column {
+  width: 30%;
+  float: left;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.column .main-color {
+  font-size: 50px;
+}
+
+.column .cell-info {
+  font-size: 30px;
+}
+
+.cell-info .small {
+  font-size: 18px;
+}
+
+.cell-info .medium {
+  font-size: 20px;
+}
+
+.cell-info .large {
+  font-size: a60px;
+}
+
+.cell-info-small {
+  font-size: 18px;
+}
+
+#organization {
+  text-align: center;
+  margin: 25px 0px;
+  clear: both;
+  width: 100%;
+  overflow: auto;
+}
+
+#organization img {
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+}
+
+#organization .column {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+#supporters {
+  text-align: left;
+  margin: 25px 0px;
+  clear: both;
+  width: 100%;
+  min-width: 1000px;
+  overflow: auto;
+}
+
+#supporters img {
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+}
+
+#supporters .main-color {
+  font-size: 50px;
+}
+
+.supporter {
+  float: left;
+}
+
+#event-objectives {
+  margin: 25px 0px;
+  clear: both;
+  overflow: auto;
+  width: 100%;
+  text-align: justify;
+}
+
+#program {
+  text-align: left;
+  margin: 25px 0px;
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
+#program table, #event-objectives, #work-team, #inscriptions {
+  font-size: 18px;
+}
+
+#work-team {
+  margin: 25px 0px;
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
+#work-team a, .organizer a , .supporter a, #inscriptions a {
+  color: white;
+  text-decoration: underline;
+}
+
+#days .hour {
+  width: 60px;
+  vertical-align: top;
+}
+
+#days table {
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+
+#days td {
+  font-weight: 100;
+  line-height: 27px;
+}
+
+#video {
+  margin: 30px 0px;
+}
+
+#footer {
+  text-align: center;
+  font-size: 18px;
+}
+
+#footer a {
+  color: white;
+}
+
+.triangle {
+  float:left;
+  width: 60px;
+  margin-top: 18px;
+  margin-right: 5px;
+}
+
+.triangle img {
+  width: 100%;
+}
+
+#video video {
+  margin-bottom: 30px;
+}
+
+.payment-text {
+  margin: 10px 0px;
+  width: 760px;
+}
+
+.float-left {
+  float: left;
+}
+
+.to-top {
+  margin-top: -35px;
+}
+
+h3 {
+  font-size:18px;
+}
+
+p {
+  text-align: justify;
+}
+
+.new_admin {
+  input {
+    color: black;
+  }
+}
