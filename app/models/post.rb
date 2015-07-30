@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   validates :title, presence: true
   validates :content, presence: true
+  validates :media_url, format: { :with => URI::regexp }
   validate :youtube_embed_url
 
   def media_type_enum
