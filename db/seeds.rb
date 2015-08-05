@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Admin.create email: "saju@admin.com", password: "admin123"
+
 About.create main_title: "COLÓQUIO", content: <<-TXT
       <p>A realiza&ccedil;&atilde;o do evento &ldquo;Col&oacute;quio Internacional de Justi&ccedil;a Juvenil na Contemporaneidade&rdquo;, no ano de 2014, resultou em uma experi&ecirc;ncia extremamente positiva no campo da socioeduca&ccedil;&atilde;o, tanto em rela&ccedil;&atilde;o &agrave;s pr&aacute;ticas profissionais, bem como na discuss&atilde;o acad&ecirc;mica.</p>\r\n\r\n
       <p>A partir dos debates e das trocas realizadas no &acirc;mbito do evento, foi poss&iacute;vel estender a interlocu&ccedil;&atilde;o entre quem vivencia, estuda ou trabalha com a tem&aacute;tica. Observamos que agentes universit&aacute;rios(as), t&eacute;cnicos(as) e professores(as) t&ecirc;m se constitu&iacute;do em importantes interlocutores e interlocutoras junto &agrave;s pessoas que operam o sistema socioeducativo, tornando-se, muitas vezes, refer&ecirc;ncia t&eacute;cnica na &aacute;rea.</p>\r\n\r\n
