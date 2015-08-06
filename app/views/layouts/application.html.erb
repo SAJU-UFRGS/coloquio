@@ -10,8 +10,12 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   </head>
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if !notice.nil? %>
+      <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if !alert.nil? %>
+      <p class="alert alert-info"><%= alert %></p>
+    <% end %>
 
     <%= yield %>
 
