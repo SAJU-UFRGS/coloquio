@@ -7,11 +7,5 @@ class CreateSponsors < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-
-    Sponsor.create(
-      name: "ThoughtWorks, Inc.",
-      website_url: "http://www.thoughtworks.com/pt",
-      image_url: "images/logo_tw_white.png"
-    )
   end
 end
