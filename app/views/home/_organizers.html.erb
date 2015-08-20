@@ -3,10 +3,20 @@
       <div class="main-color">
         Organizadores
       </div>
-      <% @organizers.each do |organizer| %>
+      <% @organizers_with_image.each do |organizer| %>
       <div class="organizer float-left">
         <a target="_blank" href="<%= organizer.website_url %>">
           <img src="<%= organizer.image_url %>" alt="<%= organizer.name %>" style="width:100px">
+        </a>
+      </div>
+      <% end %>
+
+      <div style="clear: both"></div>
+
+      <% @organizers_without_image.each do |organizer| %>
+      <div class="organizer">
+        <a target="_blank" href="<%= organizer.website_url %>">
+          <span><%= organizer.name %></span>
         </a>
       </div>
       <% end %>
