@@ -37,3 +37,10 @@ And checkout the app locally at http://localhost:3000.
 ## Kanban board
 
 We are using a [tablero](http://tablero-coloquio.herokuapp.com/) board for the issues.
+
+## Deployment
+### Email configuration
+When deploying, please be sure to add the following values as environment variables to enable use of gmail for mail delivery.
+Variables:
+  EMAIL, DOMAIN, PASSWORD.
+  `e.g. EMAIL=am.domain.com`
