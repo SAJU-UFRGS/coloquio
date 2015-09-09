@@ -12,6 +12,7 @@ gem 'ckeditor'
 
 group :production do
   gem 'rails_12factor', group: :production
+  gem 'uglifier'
 end
 
 group :development, :test do
