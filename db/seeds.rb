@@ -36,6 +36,11 @@ meeting_four_speaker = Speaker.create!([
   {name: "Alba Maria Zaluar", profile: "http://lattes.cnpq.br/0220993427804509", description: "Antropóloga brasileira, com atuação na área de antropologia urbana e antropologia da violência. Professora aposentada do  Instituto de Medicina Social da Universidade do Estado do Rio de Janeiro, onde fundou e coordenou o Núcleo de Pesquisa em Violências (NUPEVI). Professora  visitante no Instituto de Estudos Sociais e Políticos/UERJ."}
 ])
 
+meeting_five_speakers = Speaker.create!([
+  {name: "Jader Marques", profile: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4772374Y1", description: "Advogado Criminalista e Doutor em Direito pela Unisinos"},
+  {name: "Ana Cifali", profile: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4971670A3", description: "Mestre e Doutoranda em Ciências Criminais PUC-RS e membro da Comissão de Assuntos Legislativos IBCCRIM "}
+])
+
 Meeting.create!([
   {title: "PROCESSO PENAL JUVENIL: QUANDO A PRÁTICA OCUPA O VAZIO DA LEI", body: '<p>A efetiva defesa de adolescentes envolvidos em atos infracionais perpassa impreterivelmente a defesa por um processo penal juvenil democrático. Apesar do Estatuto da Criança e do Adolescente trazer em seu bojo a Doutrina da Proteção Integral, o dispositivo não instrumentalizou formas de garantir a efetiva aplicação desta nova concepção. Uma vez que existem diversas lacunas no ECA, a hermenêutica que busca supri-las, por meio da aplicação dos operadores jurídicos, se mostra de uma ampla diversidade, refletindo diferentes concepções do que consiste, afinal, a Proteção Integral. A adoção do sistema recursal civil frente a uma matéria que muito se aproxima do domínio penal, e uma intervenção jurídica de natureza ainda não solidificada dificultam a realização de um processo penal juvenil legítimo. A experiência tem revelado a existência de práticas que não coadunam com os direitos dos adolescentes estabelecidos pelo ECA. Sem um processo penal juvenil que garanta efetivamente a ampla defesa e o contraditório, a medida aplicada ao adolescente perde a pertinência. O objetivo deste painel é discutir a atuação judicial na temática, situando os participantes do Colóquio quanto aos problemas vivenciados na prática da Justiça da infância e da Juventude. Por fim, lança-se o desafio de constituir caminhos alternativos na direção de uma defesa processual efetiva.</p>', venue: "                Sala 102 da FACED <br/>\r\n                (Av. Paulo Gama s/n - Prédio 12201 térreo <br/>\r\n                Bairro Farroupilha - Porto Alegre. CEP: 90046-900) <br/>\r\n", date: "2015-06-08", start_time: "2000-01-01 18:30:00",
    speakers: meeting_three_speakers },
@@ -45,7 +50,11 @@ Meeting.create!([
      speakers: meeting_four_speaker },
      {title: "MEDIDAS SOCIOEDUCATIVAS EM MEIO ABERTO: O EXERCÍCIO DA RESPONSABILIZAÇÃO COM LIBERDADE",
       body: '<p>A discussão sobre medida socioeducativa no Rio Grande do Sul e no Brasil não apresenta uma uniformidade no que diz respeito ao seu lugar de educação, socialização e responsabilização. Observamos que a expectativa sobre a punição de quem se encontra “em Conflito com a Lei“, para a sociedade de um modo geral, sempre foi de que o castigo infringido ao(à) criminoso(a) – no caso de adolescentes, aqueles(as) que praticam ato infracional - fosse suficientemente grande e severo a ponto de fazer cessar a reincidência. A proposição de um sistema de responsabilização que prioriza a pessoa em detrimento do ato infracional, representa a grande diferença entre o Código Penal e o que prevê o Estatuto da Criança e do Adolescente. Há um contraponto que se efetiva na medida socioeducativa de meio aberto por não se tratar de uma pessoa isolado que deverá responder sozinha por sua conduta, e sim pelo reconhecimento de que sua ação está em relação com a sociedade, o Estado e a família. Nesse contexto, abre-se espaço institucional e social para outras formas de responsabilização como alternativa à restrição máxima de direitos que é a privação de liberdade. Nesse primeiro encontro, nossa intenção é pautar a medida socioeducativa em meio aberto, seus desafios, limites e potencialidades. Problematizar como o meio aberto tem acolhido adolescentes em situação de violência e em conflito com a lei e como tem inventado novas formas de intervir e de conduzir um acompanhamento que afirme a liberdade e os direitos desses sujeitos.</p>', venue: "  <p>\r\n                Sala 102 da FACED <br/>\r\n                (Av. Paulo Gama s/n - Prédio 12201 térreo <br/>\r\n                Bairro Farroupilha - Porto Alegre. CEP: 90046-900) <br/>\r\n              </p>", date: "2015-04-06", start_time: "2000-01-01 18:30:00",
-      speakers: meeting_one_speakers}
+      speakers: meeting_one_speakers},
+      {title: "REFORMAS LEGAIS NO ÂMBITO PENAL JUVENIL ",
+       body: '<p>Atualmente, encontram-se em tramitação inúmeras propostas de alteração constitucional e projetos de lei que buscam alterar a legislação que se refere aos direitos das crianças e adolescentes e a aplicação de medidas socioeducativas. Diversos são os temas propostos, desde o aumento do tempo máximo de internação do adolescente em conflito com a lei até o recolhimento de adolescentes em instituições dotadas de características hospitalares/psiquiátricas. Acerca das sugestões levantadas, observa-se uma única convergência: graves violações a direitos já conquistados por essa parcela da população no âmbito da justiça juvenil. Diante desse cenário, buscaremos debater sobre as consequências que tais reformas legais podem trazer ao sistema de justiça juvenil, assim como para os adolescentes e a sociedade como um todo.</p>', venue: "  <p>\r\n                Sala 102 da FACED <br/>\r\n                (Av. Paulo Gama s/n - Prédio 12201 térreo <br/>\r\n                Bairro Farroupilha - Porto Alegre. CEP: 90046-900) <br/>\r\n              </p>", date: "2015-08-25", start_time: "2000-01-01 18:30:00",
+       speakers: meeting_five_speakers}
+
 ])
 
 # Posts section
@@ -219,11 +228,6 @@ StaffMember.create(
   name: "Ana Claudia Cifali",
   current_job_position: "Advogada integrante do PIPA/G10/SAJU (UFRGS)",
   curriculum_vitae_url: "http://lattes.cnpq.br/9865957374821514"
-)
-StaffMember.create(
-  name: "Andressa Ribas Pereira",
-  current_job_position: "Acadêmica da Faculdade de Direito (UFRGS)",
-  curriculum_vitae_url: "http://lattes.cnpq.br/4910387397289987"
 )
 StaffMember.create(
   name: "Daniela Dora Eilberg",
