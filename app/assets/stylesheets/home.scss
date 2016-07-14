@@ -1,15 +1,21 @@
+@font-face {
+    font-family: Coloquio;
+    src: url('CODE_Bold.otf');
+}
+
 body {
-  background-color: #1B171B;
-  background-image: asset-url('fundo.jpg');
+  background-color: #b6b7b4;
+  background-image: asset-url('coloquio.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  color: #FFFFFF;
+  color: #000;
   padding: 50px 150px;
   font-family: Helvetica, sans-serif;
   font-weight: 100;
   font-size: 18px;
   min-width: 1200px;
+  margin-top: 40px;
 }
 
 .thin {
@@ -21,39 +27,20 @@ body {
 }
 
 .main-color {
-  color: #FFEC13;
+  color: #c15d5b;
 }
 
 .principal-color {
-  color: #FFEC13;
+  color: #c15d5b;
 }
 
-.main-title {
-  font-size: 70px;
-}
-
-.subtitle {
-  font-size: 14px;
-  width: 200px;
-  text-align: center;
-  margin-left: 65px;
-  position: relative;
-  top: -86px;
-  left: 121px;
+#title img {
+  width: 70%;
+  margin-left: -6.3%;
 }
 
 #event-objectives p, p.indented {
   text-indent: 50px;
-}
-
-#title .title-left {
-  float: left;
-  margin-right: 100px;
-}
-
-#title .title-right {
-  float: left;
-  margin-top: 50px;
 }
 
 .clear {
@@ -77,6 +64,7 @@ body {
 
 .column .main-color {
   font-size: 50px;
+  font-family: Coloquio;
 }
 
 .column .cell-info {
