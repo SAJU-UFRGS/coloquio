@@ -1,12 +1,12 @@
- <div id="organization">
+<div id="promoters">
   <div id="promoters" class="column">
     <div class="main-color">
       Promoção
     </div>
     <% @promoters_with_image.each do |promoter| %>
-    <div class="sponsor">
+    <div class="promoter float-left">
       <a target="_blank" href="<%= promoter.website_url %>">
-        <img src="<%= promoter.image_url %>" alt="<%= promoter.name %>"/>
+        <img src="<%= promoter.image_url %>" alt="<%= promoter.name %>" style="width:100px">
       </a>
     </div>
     <% end %>
@@ -14,7 +14,7 @@
     <div style="clear: both"></div>
 
     <% @promoters_without_image.each do |promoter| %>
-    <div class="organizer">
+    <div class="promoter">
       <a target="_blank" href="<%= promoter.website_url %>">
         <span><%= promoter.name %></span>
       </a>
@@ -24,16 +24,16 @@
 
   <div id="sponsors" class="column">
     <div class="main-color">
-      Apoio
+      Patrocinio
     </div>
-    <% @supporters.each do |supporter| %>
-    <div class="sponsor">
-      <a target="_blank" href="<%= supporter.website_url %>">
-        <img src="<%= supporter.image_url %>" alt="<%= supporter.name %>" />
-      </a>
-    </div>
+    <% @sponsors.each do |sponsor| %>
+      <div class="sponsor">
+        <a target="_blank" href="<%= sponsor.website_url %>">
+          <img src="<%= sponsor.image_url %>" alt="<%= sponsor.name %>" style="width:250px"/>
+        </a>
+      </div>
     <% end %>
-    <div />
   </div>
 </div>
- </div>
+
+

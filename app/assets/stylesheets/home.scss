@@ -116,7 +116,6 @@ body {
   margin: 25px 0px;
   clear: both;
   width: 100%;
-  min-width: 1000px;
   overflow: auto;
 }
 
@@ -210,6 +209,10 @@ body {
 
 .triangle img {
   width: 100%;
+}
+
+.sponsor {
+  display: inline;
 }
 
 #video video {
