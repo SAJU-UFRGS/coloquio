@@ -9,8 +9,8 @@ class HomeController < ApplicationController
     @staff_members = StaffMember.all
     @sponsors = Sponsor.all
     @supporters = Supporter.all
-    @meetings = Meeting.order(:date)
-    @next_meeting = Meeting.next_meeting
+    @grouped_meetings = Meeting.order(:date, :start_time).group_by(&:date)
+    @next_meeting = Meeting.next_meeting.date
     @posts = Post.all
   end
 end

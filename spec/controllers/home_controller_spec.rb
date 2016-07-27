@@ -20,7 +20,7 @@ describe HomeController do
       expect(assigns :staff_members).to contain_exactly(@staff)
       expect(assigns :sponsors).to contain_exactly(@sponsor)
       expect(assigns :supporters).to contain_exactly(@supporter)
-      expect(assigns :meetings).to contain_exactly(@meeting)
+      expect(assigns(:grouped_meetings)[@meeting.date]).to contain_exactly(@meeting)
       expect(assigns :next_meeting).to_not be_nil
       expect(assigns :posts).to contain_exactly(@post)
     end
